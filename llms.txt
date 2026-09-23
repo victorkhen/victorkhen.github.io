@@ -1,0 +1,34 @@
+# Victor Khen
+
+> Victor Khen is Partner Marketing Manager at IP Infusion, the company behind the OcNOS network operating system. He runs partner go-to-market for open networking, telecom and AI fabric across the Americas, EMEA and APAC, and he built and operates the company website, ipinfusion.com, solo with AI coding agents.
+
+## Current role
+
+- Partner Marketing Manager, IP Infusion (Aug 2023 to present).
+- Built ipinfusion.com solo on WordPress and PHP: 2-week prototype, 6-week production release, then continuous delivery.
+- ipinfusion.com today: 120+ custom page templates, 9 languages (English, Japanese, Simplified Chinese, Traditional Chinese, Korean, French, Spanish, German, Italian), a technology explainer library, JSON-LD structured data, llms.txt in every site language, Pardot lead capture, GA4 funnel measurement.
+- OcNOS Feature Matrix: 700+ features across 44 platforms, by license tier, silicon family and release.
+- Release process: staging first, 10 automated release gates, a guard on production writes, per-file SSH deploys to WP Engine.
+- Partner results: co-marketing that contributed to 20 to 40% year-over-year revenue growth from focus partners; 80% training adoption among focus partners in the first year.
+
+## Earlier roles
+
+- Sr. Marketing Specialist, UfiSpace (Dec 2021 to Aug 2023): 5G transport and disaggregated network hardware; TIP DCSG interoperability lead; supported EANTC SR-MPLS and SRv6 testing.
+- Sr. Sales Manager, UK and EMEA, QSAN Technology (Mar 2018 to Oct 2021): built the QSAN and Western Digital alliance; 30+ distributors across EMEA.
+- Sr. Sales Manager, SaaS, V2PLUS Technology (D-Link) (Mar 2016 to Feb 2018): APAC channel for unified communications.
+- Sales Account Manager, CIS, ACTi Corporation (Sep 2014 to Feb 2016): network surveillance, OEM business development.
+- Education: National Cheng Kung University, Taiwan.
+
+## Topics
+
+AI and data center fabrics (RoCEv2, lossless Ethernet, EVPN-VXLAN), service provider transport (SR-MPLS, SRv6, EVPN-MPLS), broadband and mobile access, IPoDWDM, merchant silicon, open and disaggregated networking, partner and channel go-to-market, technical SEO and answer engine optimization, AI-augmented web engineering.
+
+## Links
+
+- [Profile](https://victorkhen.github.io/): full portfolio, experience and recommendations
+- [LinkedIn](https://www.linkedin.com/in/victorkhen/): best way to make contact
+- [GitHub](https://github.com/VictorKhen)
+- [ipinfusion.com](https://www.ipinfusion.com/): the website he built and runs
+- [OcNOS Feature Matrix](https://www.ipinfusion.com/resources/ocnos-feature-matrix/)
+- [OcNOS Hardware Compatibility List](https://www.ipinfusion.com/resources/ocnos-hardware-compatibility-list/)
+- [IP Infusion technology library](https://www.ipinfusion.com/technology/)
