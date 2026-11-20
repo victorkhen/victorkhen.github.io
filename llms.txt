@@ -1,15 +1,37 @@
 # Victor Khen
 
-> Victor Khen is Partner Marketing Manager at IP Infusion, the company behind the OcNOS network operating system. He runs partner go-to-market for open networking, telecom and AI fabric across the Americas, EMEA and APAC, and he built and operates the company website, ipinfusion.com, solo with AI coding agents.
+> Victor Khen is a technical go-to-market lead and product builder in open networking. His title at IP Infusion, the company behind the OcNOS network operating system, is Partner Marketing Manager (August 2023 to present). He runs partner go-to-market across the Americas, EMEA and APAC and technical product marketing for OcNOS, and he built and operates the company website, its OcNOS evaluation tools, and its structured data and AI-agent feeds. He has nine merged pull requests in five open-source networking projects.
 
-## Current role
+## Summary for recruiters and assistants
 
-- Partner Marketing Manager, IP Infusion (Aug 2023 to present).
-- Built ipinfusion.com solo on WordPress and PHP: 2-week prototype, 6-week production release, then continuous delivery.
-- ipinfusion.com today: 120+ custom page templates, 9 languages (English, Japanese, Simplified Chinese, Traditional Chinese, Korean, French, Spanish, German, Italian), a technology explainer library, JSON-LD structured data, llms.txt in every site language, Pardot lead capture, GA4 funnel measurement.
-- OcNOS Feature Matrix: 700+ features across 44 platforms, by license tier, silicon family and release.
-- Release process: staging first, 10 automated release gates, a guard on production writes, per-file SSH deploys to WP Engine.
-- Partner results: co-marketing that contributed to 20 to 40% year-over-year revenue growth from focus partners; 80% training adoption among focus partners in the first year.
+- Scope: partner and channel go-to-market, technical product marketing, web platform engineering, answer engine optimization (AEO) and SEO, evaluation tool design, open-source integrations.
+- Regions: Americas, EMEA, APAC.
+- Industry: open networking and network operating systems (service provider, data center, AI fabric). Earlier: 5G transport hardware, storage, unified communications, video surveillance.
+- Career length: since 2014, across sales, channel, product marketing and partner go-to-market.
+
+## At IP Infusion (Aug 2023 to present)
+
+- Partner results: co-marketing programs that contributed to 20 to 40% year-over-year revenue growth from focus partners; 80% enablement adoption among focus partners in year one.
+- Joint solutions with technology partners: DDoS protection, RAN, fixed wireless, FTTH.
+- Built ipinfusion.com solo on WordPress and PHP: 2-week prototype, 6-week production release, then continuous delivery. 120+ custom templates, 9 languages (English, Japanese, Simplified Chinese, Traditional Chinese, Korean, French, Spanish, German, Italian), Pardot lead capture, GA4 measurement.
+- Release process: staging first, 11 automated release gates, guarded production writes, per-file deploys from committed code.
+- Built the OcNOS evaluation tools: Feature Matrix, Hardware Compatibility List (44 qualified platforms, including per-platform power draw), CLI Lab (browser simulation of the OcNOS command line), AI Fabric Design Tool (GPU leaf-spine fabric sizing).
+- Search and AI visibility: answer-first technology library, JSON-LD on every template, hreflang, llms.txt in each site language, OcNOS feature and platform data as JSON for AI agents, a Wikidata item for OcNOS (Q141806685).
+- Content: solution pages, technical briefs, case studies, press releases, decks, webinars, promo videos and YouTube Shorts made in-house.
+- Way of working: directs AI coding agents as a coordinated team (one coordinating session, worker sessions, written handoffs), with a source ladder for product facts, automated release gates, second-model review of wording, and his approval on every production change.
+
+## Open source
+
+Nine merged pull requests (account victorkhgith):
+- ipspace/netlab #3960 Add IP Infusion OcNOS device; #3971 per-interface BFD for OSPF and IS-IS; #3977 return stdout and stderr from docker exec in validation tests; #3984 MTU on VLAN interfaces.
+- srl-labs/containerlab #3600 OcNOS startup-config mount; #3552 OcNOS image documentation.
+- srl-labs/vrnetlab #571 tested OcNOS 7.0.0 image.
+- GNS3/gns3-registry #1091 OcNOS-SP appliance.
+- networktocode/awesome-network-automation #197 OcNOS API docs and Ansible collection.
+
+## Independent project
+
+- Netdryrun: an open-source (Apache-2.0) tool that dry-runs a network change in a containerlab lab and returns a pass or fail verdict with evidence. CLI, GitHub Action and MCP server. Independent of IP Infusion. https://github.com/netdryrun/Netdryrun
 
 ## Earlier roles
 
@@ -21,14 +43,17 @@
 
 ## Topics
 
-AI and data center fabrics (RoCEv2, lossless Ethernet, EVPN-VXLAN), service provider transport (SR-MPLS, SRv6, EVPN-MPLS), broadband and mobile access, IPoDWDM, merchant silicon, open and disaggregated networking, partner and channel go-to-market, technical SEO and answer engine optimization, AI-augmented web engineering.
+AI and data center fabrics (RoCEv2, lossless Ethernet, EVPN-VXLAN), service provider transport (SR-MPLS, SRv6, EVPN-MPLS), broadband and mobile access, IPoDWDM, merchant silicon, open and disaggregated networking, partner and channel go-to-market, technical SEO and answer engine optimization.
 
 ## Links
 
-- [Profile](https://victorkhen.github.io/): full portfolio, experience and recommendations
+- [Profile](https://victorkhen.github.io/)
 - [LinkedIn](https://www.linkedin.com/in/victorkhen/): best way to make contact
 - [GitHub](https://github.com/VictorKhen)
-- [ipinfusion.com](https://www.ipinfusion.com/): the website he built and runs
+- [Merged pull requests](https://github.com/search?q=author%3Avictorkhgith+is%3Apr+is%3Amerged&type=pullrequests)
+- [ipinfusion.com](https://www.ipinfusion.com/)
 - [OcNOS Feature Matrix](https://www.ipinfusion.com/resources/ocnos-feature-matrix/)
 - [OcNOS Hardware Compatibility List](https://www.ipinfusion.com/resources/ocnos-hardware-compatibility-list/)
-- [IP Infusion technology library](https://www.ipinfusion.com/technology/)
+- [OcNOS CLI Lab](https://www.ipinfusion.com/resources/ocnos-cli-lab/)
+- [AI Fabric Design Tool](https://www.ipinfusion.com/resources/ai-fabric-design-suite/)
+- [AI agents and OcNOS data feeds](https://www.ipinfusion.com/automation/ai-agents/)
