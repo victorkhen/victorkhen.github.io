@@ -99,7 +99,7 @@
         }
       ],
       "knowsAbout": [
-        "Partner go-to-market", "Channel programs", "Co-marketing", "Partner enablement",
+        "Partner go-to-market", "Channel programs", "Co-marketing", "Partner enablement", "Learning management (Litmos)", "Video production",
         "Technical product marketing", "Product positioning", "Sales and business development",
         "Answer engine optimization", "Search engine optimization", "Structured data (JSON-LD)", "llms.txt", "Wikidata",
         "Web platform development", "WordPress", "PHP", "JavaScript", "Internationalization",
@@ -137,7 +137,8 @@
         { "@type": "ListItem", "position": 7, "item": { "@type": "SoftwareSourceCode", "name": "OcNOS device support in netlab", "url": "https://github.com/ipspace/netlab/pull/3960", "programmingLanguage": "Python", "creator": { "@id": "https://victorkhen.github.io/#person" } } },
         { "@type": "ListItem", "position": 8, "item": { "@type": "SoftwareSourceCode", "name": "OcNOS startup-config support in containerlab", "url": "https://github.com/srl-labs/containerlab/pull/3600", "creator": { "@id": "https://victorkhen.github.io/#person" } } },
         { "@type": "ListItem", "position": 9, "item": { "@type": "SoftwareApplication", "name": "Netdryrun", "url": "https://github.com/netdryrun/Netdryrun", "applicationCategory": "DeveloperApplication", "operatingSystem": "Linux", "license": "https://www.apache.org/licenses/LICENSE-2.0" } },
-        { "@type": "ListItem", "position": 10, "item": { "@type": "VideoObject", "name": "OcNOS 800G Lossless Ethernet Fabric for AI", "url": "https://www.youtube.com/watch?v=GxRz-GNKiCA" } }
+        { "@type": "ListItem", "position": 10, "item": { "@type": "VideoObject", "name": "OcNOS 800G Lossless Ethernet Fabric for AI", "url": "https://www.youtube.com/watch?v=GxRz-GNKiCA" } },
+        { "@type": "ListItem", "position": 11, "item": { "@type": "Course", "name": "IP Infusion partner onboarding (Litmos, 19 video courses)", "provider": { "@id": "https://www.ipinfusion.com/#organization" }, "creator": { "@id": "https://victorkhen.github.io/#person" } } }
       ]
     },
     {
@@ -145,7 +146,7 @@
       "@id": "https://victorkhen.github.io/#faq",
       "mainEntity": [
         { "@type": "Question", "name": "Who is Victor Khen?", "acceptedAnswer": { "@type": "Answer", "text": "Victor Khen is a technical go-to-market lead and product builder in open networking. His title at IP Infusion is Partner Marketing Manager. He runs partner go-to-market across the Americas, EMEA and APAC and technical product marketing for the OcNOS network operating system, and he built and operates ipinfusion.com, the OcNOS evaluation tools and the site's structured data and AI-agent feeds. Before IP Infusion he held marketing, channel sales and partner roles at UfiSpace, QSAN, V2PLUS (D-Link) and ACTi." } },
-        { "@type": "Question", "name": "What has Victor Khen built?", "acceptedAnswer": { "@type": "Answer", "text": "He built ipinfusion.com on WordPress and PHP, with 120+ custom templates in 9 languages, and runs it with staging first and 11 automated release gates. He built the OcNOS Feature Matrix and Hardware Compatibility List covering 44 qualified platforms, the OcNOS CLI Lab, the AI Fabric Design Tool, and machine-readable OcNOS feature and platform data for AI agents." } },
+        { "@type": "Question", "name": "What has Victor Khen built?", "acceptedAnswer": { "@type": "Answer", "text": "He built ipinfusion.com on WordPress and PHP, with 120+ custom templates in 9 languages, and runs it with staging first and automated release checks. He built the OcNOS Feature Matrix and Hardware Compatibility List covering 44 qualified platforms, the OcNOS CLI Lab, the AI Fabric Design Tool, machine-readable OcNOS feature and platform data for AI agents, a 19-course partner onboarding academy on Litmos and more than 60 in-house videos." } },
         { "@type": "Question", "name": "What open-source work has Victor Khen done?", "acceptedAnswer": { "@type": "Answer", "text": "He has nine merged pull requests in five networking projects: netlab (OcNOS device support, per-interface BFD for OSPF and IS-IS, a validation-test output fix, VLAN interface MTU), containerlab (OcNOS startup-config support and documentation), vrnetlab (a tested OcNOS image), the GNS3 registry (an OcNOS-SP appliance) and awesome-network-automation. He also tests and reviews community pull requests in an OcNOS lab." } },
         { "@type": "Question", "name": "How does Victor Khen work with AI agents?", "acceptedAnswer": { "@type": "Answer", "text": "He directs AI coding agents as a coordinated team: one coordinating session assigns jobs to worker sessions under written rules, facts follow a source ladder, every release goes to staging and through automated gates first, a second model reviews wording, and production changes need his approval. He keeps responsibility for architecture, product accuracy and release decisions." } },
         { "@type": "Question", "name": "What is Netdryrun?", "acceptedAnswer": { "@type": "Answer", "text": "Netdryrun is an independent open-source project (Apache-2.0) that dry-runs a network change in a containerlab lab and returns a pass or fail verdict with evidence. It runs as a CLI, a GitHub Action and an MCP server, and its known limits are published in the repository." } },
@@ -230,7 +231,6 @@
         h1, h2, h3 { font-weight: 400; margin: 0; color: var(--ink); text-wrap: balance; }
         :focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: 8px; }
         .wrap { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 32px; }
-        .narrow { max-width: 780px; }
         .icon { width: 1.125em; height: 1.125em; fill: currentColor; flex: none; }
         .skip-link { position: absolute; left: 16px; top: -64px; z-index: 100; background: var(--primary); color: var(--on-primary); padding: 10px 18px; border-radius: 999px; text-decoration: none; }
         .skip-link:focus { top: 12px; }
@@ -353,6 +353,7 @@
         .quotes figcaption span { color: var(--ink-3); font-size: .9375rem; }
 
         /* FAQ */
+        .faq { max-width: 880px; }
         .faq details { border-top: 1px solid var(--line); }
         .faq details:last-child { border-bottom: 1px solid var(--line); }
         .faq summary { list-style: none; cursor: pointer; padding: 22px 0; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
@@ -369,6 +370,11 @@
         .notes li { color: var(--ink-3); }
         .proof li strong { text-wrap: balance; }
         .quotes blockquote p { text-indent: -0.42em; }
+        /* Results */
+        .results .specs { display: grid; grid-template-columns: 1fr; column-gap: 64px; border-top: 0; }
+        @media (min-width: 900px) { .results .specs { grid-template-columns: 1fr 1fr; } }
+        .results .spec { grid-template-columns: 1fr; align-content: start; border-bottom: 0; border-top: 1px solid var(--line); }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
         /* Close + footer */
         .close { text-align: center; }
         .close h2 { font-size: clamp(2rem, 1.3rem + 2.2vw, 3.25rem); letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 16px; }
@@ -409,6 +415,7 @@
             <nav class="subnav-links" aria-label="Sections">
                 <a href="#overview">Overview</a>
                 <a href="#built">Built</a>
+                <a href="#results">Search</a>
                 <a href="#specs">Specs</a>
                 <a href="#work">Work</a>
                 <a href="#career">Career</a>
@@ -458,7 +465,8 @@
                     </div>
                     <ul class="proof">
                         <li><strong>The full content lifecycle</strong> Solution pages, technical briefs, case studies, press releases, decks and webinars, each tied to lead capture.</li>
-                        <li><strong>Video made in-house</strong> Promo videos and more than 30 YouTube Shorts scripted, rendered and edited in-house on a GPU pipeline. <a href="https://www.youtube.com/@IPInfusion/shorts" target="_blank" rel="noopener">Watch the Shorts</a></li>
+                        <li><strong>60+ videos made in-house</strong> Training courses, promos, webinars, weekly YouTube videos and Shorts, scripted, rendered and edited on a GPU pipeline. <a href="https://www.youtube.com/@IPInfusion" target="_blank" rel="noopener">See the channel</a></li>
+                        <li><strong>A partner academy on Litmos</strong> Built the partner onboarding path: 19 video courses, each with a quiz.</li>
                         <li><strong>AI fabric, data center and service provider</strong> RoCEv2, EVPN-VXLAN, SR-MPLS, SRv6, broadband access, IPoDWDM and merchant silicon.</li>
                     </ul>
                 </div>
@@ -469,7 +477,7 @@
                     </div>
                     <ul class="proof">
                         <li><strong>120+ templates in 9 languages</strong> WordPress and PHP theme, a custom translation plugin, lead capture and GA4 measurement.</li>
-                        <li><strong>Staging first, 11 automated release gates</strong> Every change is checked on staging; production writes are guarded and shipped per file from committed code.</li>
+                        <li><strong>Staging first, automated release checks</strong> Every change is tested on staging before it goes live.</li>
                         <li><strong>Evaluation tools buyers use before they call sales</strong> Feature Matrix, Hardware Compatibility List, CLI Lab and AI Fabric Design Tool. <a href="#built">See the list</a></li>
                     </ul>
                 </div>
@@ -487,19 +495,38 @@
             </div>
         </section>
 
+        <section class="block" id="results" aria-labelledby="results-h">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2 id="results-h">Search, AI answers and leads</h2>
+                    <p>I rebuilt how the company is found in search and AI assistants, and how website visits turn into leads.</p>
+                </div>
+                <div class="results">
+                    <dl class="specs">
+                        <div class="spec"><dt>Search</dt><dd>Relaunched the site in May 2026 with answer-first pages, structured data and hreflang across 9 languages. Google search traffic has grown month on month since the relaunch.</dd></div>
+                        <div class="spec"><dt>AI answer engines</dt><dd>llms.txt in each site language, JSON-LD on every template, OcNOS feature and platform data in JSON for agents, and a Wikidata item for OcNOS. <a href="https://www.ipinfusion.com/automation/ai-agents/" target="_blank" rel="noopener">Source</a></dd></div>
+                        <div class="spec"><dt>Leads</dt><dd>Rebuilt lead capture: every website form submits directly to Pardot, with field checks, corporate email rules and an automated test on each release.</dd></div>
+                        <div class="spec"><dt>Measurement</dt><dd>GA4 events and custom dimensions for every form and call to action, with Search Console reviewed weekly.</dd></div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
         <section class="block band" id="built" aria-labelledby="built-h">
             <div class="wrap">
                 <div class="section-head">
                     <h2 id="built-h">What I built</h2>
-                    <p>Live and public. Each item links to the tool or page itself.</p>
+                    <p>Live work. Each item links to the tool, the page or a way to see it.</p>
                 </div>
                 <ul class="built">
-                    <li><h3>ipinfusion.com</h3><p>The corporate website, built and run solo: 120+ custom templates, 9 languages, lead capture, analytics and release gates.</p><a class="go" href="https://www.ipinfusion.com/" target="_blank" rel="noopener">Visit the site<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+                    <li><h3>ipinfusion.com</h3><p>The corporate website, built and run solo: 120+ custom templates, 9 languages, lead capture, analytics and automated release checks.</p><a class="go" href="https://www.ipinfusion.com/" target="_blank" rel="noopener">Visit the site<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></li>
                     <li><h3>OcNOS Feature Matrix</h3><p>Every OcNOS feature by platform, licence tier, silicon family and release, with filters and PDF export.</p><a class="go" href="https://www.ipinfusion.com/resources/ocnos-feature-matrix/" target="_blank" rel="noopener">Open the tool<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></li>
                     <li><h3>OcNOS Hardware Compatibility List</h3><p>Lists 44 qualified platforms by vendor, silicon, capacity, form factor and power draw, with a side-by-side comparator.</p><a class="go" href="https://www.ipinfusion.com/resources/ocnos-hardware-compatibility-list/" target="_blank" rel="noopener">Open the tool<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></li>
                     <li><h3>OcNOS CLI Lab</h3><p>A simulation of the OcNOS command line in the browser, with ready-made networks and guided exercises. Nothing to install.</p><a class="go" href="https://www.ipinfusion.com/resources/ocnos-cli-lab/" target="_blank" rel="noopener">Try the lab<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></li>
                     <li><h3>AI Fabric Design Tool</h3><p>Sizes a non-blocking GPU leaf-spine fabric, counts transceivers and cables, and returns a congestion profile for lossless Ethernet.</p><a class="go" href="https://www.ipinfusion.com/resources/ai-fabric-design-suite/" target="_blank" rel="noopener">Open the tool<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></li>
                     <li><h3>OcNOS in open-source network labs</h3><p>Nine merged pull requests in netlab, containerlab, vrnetlab, the GNS3 registry and awesome-network-automation, so engineers can lab OcNOS with the tools they already use.</p><a class="go" href="https://github.com/search?q=author%3Avictorkhgith+is%3Apr+is%3Amerged&amp;type=pullrequests" target="_blank" rel="noopener">See the merged pull requests<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+                    <li><h3>Partner onboarding academy</h3><p>The IP Infusion partner onboarding path on Litmos: 19 video courses, each with a quiz, from first contact to AI fabric. Partner login required.</p><a class="go" href="https://www.linkedin.com/in/victorkhen/" target="_blank" rel="noopener">Ask me for a walkthrough<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></li>
+                    <li><h3>Video library</h3><p>More than 60 videos made in-house: training courses, product promos, webinars, weekly YouTube videos and Shorts.</p><a class="go" href="https://www.youtube.com/@IPInfusion" target="_blank" rel="noopener">Watch on YouTube<svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a></li>
                 </ul>
             </div>
         </section>
@@ -515,8 +542,9 @@
                     <div class="spec"><dt>Regions</dt><dd>Americas, EMEA and APAC. <a href="https://www.linkedin.com/in/victorkhen/" target="_blank" rel="noopener">LinkedIn</a></dd></div>
                     <div class="spec"><dt>Industry</dt><dd>Open networking: network operating systems for service provider, data center and AI fabric networks. Earlier: 5G transport hardware, storage, unified communications and video surveillance. <a href="#career">Career</a></dd></div>
                     <div class="spec"><dt>Partner results</dt><dd>20 to 40% year-over-year revenue growth from focus partners; 80% enablement adoption among focus partners in year one.<sup><a href="#note-1" id="ref-1b" aria-label="Note 1">1</a></sup></dd></div>
-                    <div class="spec"><dt>Platform built</dt><dd>ipinfusion.com: WordPress and PHP, 120+ custom templates, 9 languages, staging first, 11 automated release gates. <a href="https://www.ipinfusion.com/" target="_blank" rel="noopener">Source</a></dd></div>
+                    <div class="spec"><dt>Platform built</dt><dd>ipinfusion.com: WordPress and PHP, 120+ custom templates, 9 languages, staging first, automated release checks. <a href="https://www.ipinfusion.com/" target="_blank" rel="noopener">Source</a></dd></div>
                     <div class="spec"><dt>Tools built</dt><dd>OcNOS Feature Matrix, Hardware Compatibility List (44 qualified platforms), CLI Lab, AI Fabric Design Tool. <a href="#built">Links</a></dd></div>
+                    <div class="spec"><dt>Training and video</dt><dd>Partner onboarding path on Litmos (19 video courses with quizzes); more than 60 videos made in-house. <a href="https://www.youtube.com/@IPInfusion" target="_blank" rel="noopener">YouTube</a></dd></div>
                     <div class="spec"><dt>Search and AI visibility</dt><dd>JSON-LD on every template, hreflang across 9 languages, llms.txt per language, OcNOS data feeds for AI agents, Wikidata, Search Console and GA4. <a href="https://www.ipinfusion.com/llms.txt" target="_blank" rel="noopener">Source</a></dd></div>
                     <div class="spec"><dt>Open source</dt><dd>9 merged pull requests in 5 projects: netlab (4), containerlab (2), vrnetlab, GNS3 registry, awesome-network-automation. <a href="https://github.com/search?q=author%3Avictorkhgith+is%3Apr+is%3Amerged&amp;type=pullrequests" target="_blank" rel="noopener">Source</a></dd></div>
                     <div class="spec"><dt>Way of working</dt><dd>Directs AI coding agents as a coordinated team under written rules, release gates and second-model review. Owns architecture, accuracy and release decisions. <a href="#how">How I work</a></dd></div>
@@ -599,10 +627,12 @@
                                 <li>Run partner-led go-to-market across the Americas, EMEA and APAC; co-marketing programs contributed to 20 to 40% year-over-year revenue growth from focus partners.<sup><a href="#note-1" aria-label="Note 1">1</a></sup></li>
                                 <li>Built executive-sponsored enablement that reached 80% adoption among focus partners in year one.<sup><a href="#note-1" aria-label="Note 1">1</a></sup></li>
                                 <li>Recruited technology partners and built joint solutions (DDoS, RAN, FWA, FTTH) with product management, SEs and sales.</li>
-                                <li>Built and operate ipinfusion.com solo: 120+ templates, 9 languages, lead capture, analytics, staging first with 11 automated release gates.</li>
+                                <li>Built and operate ipinfusion.com solo: 120+ templates, 9 languages, lead capture, analytics, staging first with automated release checks.</li>
                                 <li>Built the OcNOS evaluation tools: Feature Matrix, Hardware Compatibility List, CLI Lab and AI Fabric Design Tool.</li>
                                 <li>Built an answer-first technology library, structured data, llms.txt in each site language and OcNOS data feeds for AI agents.</li>
-                                <li>Own the content lifecycle: solution pages, briefs, case studies, press releases, decks, webinars and in-house video.</li>
+                                <li>Own the content lifecycle: solution pages, briefs, case studies, press releases, decks, webinars and more than 60 in-house videos.</li>
+                                <li>Built the partner onboarding academy on Litmos: 19 video courses, each with a quiz.</li>
+                                <li>Relaunched the site in May 2026 for search and AI answer engines, and rebuilt lead capture so every website form submits directly to Pardot.</li>
                                 <li>Nine merged pull requests bringing OcNOS into netlab, containerlab, vrnetlab, the GNS3 registry and awesome-network-automation; test and review related community work in an OcNOS lab.</li>
                             </ul>
                         </div>
@@ -674,11 +704,11 @@
         </section>
 
         <section class="block tone-bg" id="faq" aria-labelledby="faq-h">
-            <div class="wrap narrow">
+            <div class="wrap">
                 <div class="section-head"><h2 id="faq-h">Questions</h2></div>
                 <div class="faq">
                     <details open><summary><h3>Who is Victor Khen?</h3></summary><p class="faq-answer">Victor Khen is a technical go-to-market lead and product builder in open networking. His title at IP Infusion is Partner Marketing Manager. He runs partner go-to-market across the Americas, EMEA and APAC and technical product marketing for the OcNOS network operating system, and he built and operates ipinfusion.com, the OcNOS evaluation tools and the site's structured data and AI-agent feeds. Before IP Infusion he held marketing, channel sales and partner roles at UfiSpace, QSAN, V2PLUS (D-Link) and ACTi.</p></details>
-                    <details><summary><h3>What has Victor Khen built?</h3></summary><p class="faq-answer">He built ipinfusion.com on WordPress and PHP, with 120+ custom templates in 9 languages, and runs it with staging first and 11 automated release gates. He built the OcNOS Feature Matrix and Hardware Compatibility List covering 44 qualified platforms, the OcNOS CLI Lab, the AI Fabric Design Tool, and machine-readable OcNOS feature and platform data for AI agents.</p></details>
+                    <details><summary><h3>What has Victor Khen built?</h3></summary><p class="faq-answer">He built ipinfusion.com on WordPress and PHP, with 120+ custom templates in 9 languages, and runs it with staging first and automated release checks. He built the OcNOS Feature Matrix and Hardware Compatibility List covering 44 qualified platforms, the OcNOS CLI Lab, the AI Fabric Design Tool, machine-readable OcNOS feature and platform data for AI agents, a 19-course partner onboarding academy on Litmos and more than 60 in-house videos.</p></details>
                     <details><summary><h3>What open-source work has Victor Khen done?</h3></summary><p class="faq-answer">He has nine merged pull requests in five networking projects: netlab (OcNOS device support, per-interface BFD for OSPF and IS-IS, a validation-test output fix, VLAN interface MTU), containerlab (OcNOS startup-config support and documentation), vrnetlab (a tested OcNOS image), the GNS3 registry (an OcNOS-SP appliance) and awesome-network-automation. He also tests and reviews community pull requests in an OcNOS lab. <a href="https://github.com/search?q=author%3Avictorkhgith+is%3Apr+is%3Amerged&amp;type=pullrequests" target="_blank" rel="noopener">See the pull requests</a></p></details>
                     <details><summary><h3>How does Victor Khen work with AI agents?</h3></summary><p class="faq-answer">He directs AI coding agents as a coordinated team: one coordinating session assigns jobs to worker sessions under written rules, facts follow a source ladder, every release goes to staging and through automated gates first, a second model reviews wording, and production changes need his approval. He keeps responsibility for architecture, product accuracy and release decisions.</p></details>
                     <details><summary><h3>What is Netdryrun?</h3></summary><p class="faq-answer">Netdryrun is an independent open-source project (Apache-2.0) that dry-runs a network change in a containerlab lab and returns a pass or fail verdict with evidence. It runs as a CLI, a GitHub Action and an MCP server, and its known limits are published in the repository.</p></details>

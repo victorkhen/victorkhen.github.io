@@ -14,10 +14,12 @@
 - Partner results: co-marketing programs that contributed to 20 to 40% year-over-year revenue growth from focus partners; 80% enablement adoption among focus partners in year one.
 - Joint solutions with technology partners: DDoS protection, RAN, fixed wireless, FTTH.
 - Built ipinfusion.com solo on WordPress and PHP: 2-week prototype, 6-week production release, then continuous delivery. 120+ custom templates, 9 languages (English, Japanese, Simplified Chinese, Traditional Chinese, Korean, French, Spanish, German, Italian), Pardot lead capture, GA4 measurement.
-- Release process: staging first, 11 automated release gates, guarded production writes, per-file deploys from committed code.
+- Release process: staging first, with automated release checks.
 - Built the OcNOS evaluation tools: Feature Matrix, Hardware Compatibility List (44 qualified platforms, including per-platform power draw), CLI Lab (browser simulation of the OcNOS command line), AI Fabric Design Tool (GPU leaf-spine fabric sizing).
 - Search and AI visibility: answer-first technology library, JSON-LD on every template, hreflang, llms.txt in each site language, OcNOS feature and platform data as JSON for AI agents, a Wikidata item for OcNOS (Q141806685).
-- Content: solution pages, technical briefs, case studies, press releases, decks, webinars, promo videos and YouTube Shorts made in-house.
+- Search, AI answers and leads: relaunched the site in May 2026 with answer-first pages, structured data and hreflang in 9 languages; Google search traffic has grown month on month since. Rebuilt lead capture so every website form submits directly to Pardot.
+- Partner training: built the partner onboarding path on Litmos, 19 video courses each with a quiz.
+- Content: solution pages, technical briefs, case studies, press releases, decks, webinars and more than 60 in-house videos (training, promos, webinars, weekly YouTube, Shorts).
 - Way of working: directs AI coding agents as a coordinated team (one coordinating session, worker sessions, written handoffs), with a source ladder for product facts, automated release gates, second-model review of wording, and his approval on every production change.
 
 ## Open source
